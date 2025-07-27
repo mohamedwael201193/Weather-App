@@ -96,12 +96,14 @@ main {
 
 .hero .row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 1.5rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 1rem;
   justify-content: space-between;
+  align-items: center; 
+  margin: 0 auto 0 auto;
 }
 
 .card-weather {
@@ -111,14 +113,25 @@ main {
   padding: 1.5rem;
   color: #e0e0e0;
   transition: transform 0.3s ease;
-  flex: 1 1 30%;
-  max-width: 30%;
+  flex: 1 1 100%;
+  max-width: 100%;
   box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+  .card-weather {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
 }
 
 @media (min-width: 768px) {
   .hero .row {
     flex-wrap: nowrap;
     overflow-x: visible;
+  }
+  .card-weather {
+    flex: 1 1 30%;
+    max-width: 30%;
   }
 }
