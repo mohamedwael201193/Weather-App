@@ -8,7 +8,7 @@ let searchBtn = document.querySelector(".search");
 async function getData(type = "london") {
   try {
     let response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${type}&days=3`
+      `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${type}&days=3`
     );
     let result = await response.json();
     console.log(result);
