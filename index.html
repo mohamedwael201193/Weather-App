@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-content-center align-items-center"
+          href="#"
+        >
+          <img
+            src="https://routeweather.netlify.app/images/logo@2x.png"
+            alt=""
+            class="logo"
+            width="64"
+            height="38"
+          />
+          Weather
+          <small class="text-muted">tagline goes here</small>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link home-nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="hero">
+        <div class="form pt-5 d-flex justify-content-center align-items-center">
+          <input
+            placeholder=" Find your location..."
+            type="search"
+            class="w-75 px-2 py-3 rounded-5 bg-dark text-white input-search"
+          />
+          <div class="btn btn-primary rounded-5 px-5 py-3 mx-2 search">
+            Search
+          </div>
+        </div>
+        <div class="container py-5">
+          <div class="row  w-100">
+            <div class="card-weather font-inter">
+              <div class="head d-flex justify-content-between py-3">
+                <div class="text">sunday</div>
+                <div class="date">4 may</div>
+              </div>
+              <div class="main-data">
+                <p class="location">cairo</p>
+                <h1 class="deg">20°C</h1>
+                <div class="icon-weather">☀️</div>
+                <div
+                  class="icon-data d-flex justify-content-evenly align-items-center"
+                ></div>
+              </div>
+            </div>
+            <div class="card-weather font-inter">
+              <div class="head d-flex justify-content-between py-3">
+                <div class="text">sunday</div>
+                <div class="date">4 may</div>
+              </div>
+              <div class="main-data">
+                <p class="location">cairo</p>
+                <h1 class="deg">20°C</h1>
+                <div class="icon-weather">🌧️</div>
+                <div
+                  class="icon-data d-flex justify-content-evenly align-items-center"
+                ></div>
+              </div>
+            </div>
+            <div class="card-weather font-inter">
+              <div class="head d-flex justify-content-between py-3">
+                <div class="text">sunday</div>
+                <div class="date">4 may</div>
+              </div>
+              <div class="main-data">
+                <p class="location">cairo</p>
+                <h1 class="deg">20°C</h1>
+                <div class="icon-weather">☀️</div>
+                <div
+                  class="icon-data d-flex justify-content-evenly align-items-center"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container ">
+        <div class="row my-5">
+          <div class="col-md-6">
+            <div class="form d-flex justify-content-center align-items-center">
+              <input
+                placeholder=" Enter email to Subscribe..."
+                type="search"
+                class="w-100 px-2 py-3 rounded-5 bg-dark text-white"
+              />
+              <div class="btn btn-primary rounded-5 px-4 py-3 mx-2 search">
+                Subscribe
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="icons d-flex justify-content-center align-items-center pt-4 text-primary fs-3"
+            >
+              <i class="fa-brands fa-facebook px-2"></i>
+              <i class="fa-brands fa-linkedin px-2"></i>
+              <i class="fa-brands fa-discord px-2"></i>
+              <i class="fa-brands fa-google px-2"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-white py-4">
+          Copyright 2025 . Designed by Mo wael. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
+</html>
